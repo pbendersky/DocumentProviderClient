@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6154.21" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="diG-Ix-vMR">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6153.13"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ron-UH-z23">
+                                <rect key="frame" x="54" y="96" width="38" height="30"/>
+                                <state key="normal" title="Open">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="openDocument:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c26-gH-6XX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5wi-1j-AYI">
+                                <rect key="frame" x="375" y="96" width="45" height="30"/>
+                                <state key="normal" title="Import">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="importDocument:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rq7-q2-Qgh"/>
+                                    <action selector="openDocument:" destination="BYZ-38-t0r" eventType="touchUpInside" id="khu-C5-cei"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LkE-6i-9xL">
+                                <rect key="frame" x="338" y="194" width="119" height="30"/>
+                                <state key="normal" title="Export to Service">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="exportToService:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dCu-GE-DMY"/>
+                                    <action selector="openDocument:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Ty-hE-meX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Goh-tO-6gh">
+                                <rect key="frame" x="16" y="194" width="111" height="30"/>
+                                <state key="normal" title="Move to Service">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="moveToService:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PcQ-LQ-bTI"/>
+                                    <action selector="openDocument:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fY6-Zl-5jD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ron-UH-z23" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="54" id="2c6-TT-LBc"/>
+                            <constraint firstItem="LkE-6i-9xL" firstAttribute="top" secondItem="5wi-1j-AYI" secondAttribute="bottom" constant="68" id="Ach-3I-TeS"/>
+                            <constraint firstItem="Ron-UH-z23" firstAttribute="centerX" secondItem="Goh-tO-6gh" secondAttribute="centerX" constant="2" id="AdO-Lg-YSm"/>
+                            <constraint firstItem="Ron-UH-z23" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="32" id="ash-NA-Tha"/>
+                            <constraint firstItem="Goh-tO-6gh" firstAttribute="top" secondItem="Ron-UH-z23" secondAttribute="bottom" constant="68" id="bU1-wc-YJ6"/>
+                            <constraint firstItem="5wi-1j-AYI" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="32" id="oFQ-Ad-CjI"/>
+                            <constraint firstItem="5wi-1j-AYI" firstAttribute="centerX" secondItem="LkE-6i-9xL" secondAttribute="centerX" constant="0.5" id="vH5-uE-gGO"/>
+                            <constraint firstAttribute="trailing" secondItem="5wi-1j-AYI" secondAttribute="trailing" constant="60" id="xSq-RX-uAJ"/>
+                        </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Qe8-Y5-iua"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="592" y="141"/>
+        </scene>
+        <!--Text Editor View Controller-->
+        <scene sceneID="Sbk-Cy-kOy">
+            <objects>
+                <viewController storyboardIdentifier="editorViewController" id="5RS-a0-nZr" customClass="TextEditorViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="p9A-4s-jOk"/>
+                        <viewControllerLayoutGuide type="bottom" id="RnE-qb-KML"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="U0I-We-qdM">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hwt-Ts-ZnD">
+                                <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="RnE-qb-KML" firstAttribute="top" secondItem="hwt-Ts-ZnD" secondAttribute="bottom" id="UEj-CG-4L4"/>
+                            <constraint firstItem="hwt-Ts-ZnD" firstAttribute="top" secondItem="p9A-4s-jOk" secondAttribute="bottom" constant="-64" id="Y8r-ZV-C5g"/>
+                            <constraint firstItem="hwt-Ts-ZnD" firstAttribute="leading" secondItem="U0I-We-qdM" secondAttribute="leading" id="qsk-29-gAz"/>
+                            <constraint firstAttribute="trailing" secondItem="hwt-Ts-ZnD" secondAttribute="trailing" id="uy6-XZ-SNI"/>
+                        </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="HPb-1V-MI1">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="De2-bb-aeU">
+                            <connections>
+                                <action selector="doneEditing:" destination="5RS-a0-nZr" id="caL-Bk-va7"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="textView" destination="hwt-Ts-ZnD" id="clg-tP-Gi1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3W8-oc-LzG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1201" y="177"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Tph-g1-IFQ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="diG-Ix-vMR" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hEc-0j-5Mb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="RKO-re-XH7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z9c-5l-nbG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-97" y="141"/>
+        </scene>
+    </scenes>
+</document>
